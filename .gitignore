@@ -1,0 +1,25 @@
+# 本地环境
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# 配置与密钥
+config.ini
+.env
+
+# 运行数据
+data/
+logs/
+
+# 模型、参考音、曲库（都太大 / 涉及版权和声音授权）
+tools/ai/
+tools/data/
+tools/cache/
+*.wav
+*.mp3
+*.m4a
+*.flac
+
+# 个人人设（仓库里只放通用示例）
+personas/fish.txt

@@ -1,0 +1,22 @@
+# DeepSeek × 微信 机器人依赖
+# 安装：install.bat 里会自动执行  pip install -r requirements.txt
+
+# 微信 4.x 自动化（读数据库 + 驱动窗口发送）
+wechatauto-replica>=1.2.7
+
+# 下面这些是 wechatauto 的运行依赖（我们跳过 pyautogui / opencv，
+# 它们只用于朋友圈的鼠标操作，机器人用不到）
+uiautomation>=2.0.18
+pywin32>=305
+pyperclip>=1.8.2
+psutil>=5.9.0
+cryptography>=41.0.0
+winsdk>=1.0.0b10
+pillow>=9.0.0
+colorama>=0.4.6
+
+# UIA 驱动必需（缺了它会静默降级到 OCR，发送容易失败）
+numpy>=1.26
+
+# 调 DeepSeek 接口
+requests>=2.31.0
